@@ -3,11 +3,12 @@ from pytube import Playlist
 import os 
 
 #destination to save file
-destination = 'D:\\Music'
+#eg 'D:\\Music'
+destination = '#put destination path here'
 count_m = 0
 #The playlist to download from
 #Make sure the playlist is public or unlisted. Else we can't read or view the playlist
-p = Playlist('https://www.youtube.com/playlist?list=PLiGgqAejfhKOfNR5h9LXbXs0CfBbO3jh4')
+p = Playlist('#paste the playlist url here')
 for video in p.videos:
 	# extract only audio
 	video_audio_only = video.streams.get_audio_only()            
